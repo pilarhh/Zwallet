@@ -11,6 +11,15 @@
 .text-center {
     text-align: center;
 }
+.text-icon {
+    color: rgba(58, 61, 66, 0.8);;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.fw-light {
+    font-weight: lighter;
+}
 .brand-name {
     font-family: Nunito Sans;
     font-weight: bold;
@@ -35,4 +44,20 @@
 }
 .text-primary {
     color: #6379f4;
+}
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+.shadow {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+.fw-normal {
+    font-weight: normal;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.number-bottom {
+    margin-right: 30px;
 }
