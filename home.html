@@ -13,64 +13,11 @@
 </head>
 
 <style>
-    .navbar {
-        background-color: #ffffff;
-    }
-    .wrapper {
-        display: flex;
-        align-items: center;
-    }
-    .navbar-column {
-        flex: 50%;
-    }
-    .navbar-column.left {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .navbar-column.right {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .user-info {
-        margin-left: 20px;
-        line-height: 30px;
-    }
-    .icon-bell {
-        margin-left: 12.5%;
-    }
-    .main-wrapper {
-        display: flex;
-        padding: 15px 0;
-        top: 180px;
-    }
-    .sidebar-menu {
-        flex: 30%;
-        height: 65vh;
-        padding: 15px;
-        background-color: #ffffff;
-    }
-    .box-sidebar {
-        height: 100%;
-        font-size: 18px;
-        line-height: 31px;
-    }
-    .icon-sidebar {
-        line-height: 60px;
-        margin-left: 15px;
-        padding-top: 20px;
-    }
-    .log-out {
-        margin-top: 80px;
-    }
     .box {
         background: #ffffff;
         height: 100%;
         border-radius: 25px;
     }    
-    .main-content {
-        flex: 70%;
-        height: 70vh;
-    }
     .main-balance-wrapper {
         padding: 15px;
         height: 30%;
@@ -79,26 +26,32 @@
     .box-balance {
         background-color: #6379f4;
         height: 100%;
-        padding: 10px;
-        flex: 50%;
-    }
-    .box-balance.left {
+        padding: 8px;
         display: flex;
-        justify-content: flex-start;
-    }
-    .box-balance.right {
-        display: flex;
-        justify-content: flex-end;
-    }
-    .top-box-balance {
-        background: rgba(255, 255, 255, 0.2);
-        box-sizing: border-box;
-        border: 1px;
-        border-radius: 10px;
     }
     .balance-info {
         margin-left: 30px;
         line-height: 20px;
+        margin-top: 10px;
+        flex: 50%;
+    }
+    .box-transfer {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        width: 75%;
+        height: 35%;
+    }
+    .box-topup {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        width: 75%;
+        height: 35%;
+        margin-top: 15px;
+    }
+    .icon-balance {
+        color: #B5B0ED;
     }
     .balance {
         font-size: 18px;
@@ -119,38 +72,112 @@
         height: 90%;
     }
     .main-transaction-wrapper.charts {
-        flex: 55%;
+        flex: 50%;
     }
     .main-transaction-wrapper.history {
-        flex: 45%;
-    }
-    .box-chart {
-
-    }
-    .box-history {
-
-    }
-    .navbar-bottom {
-        background-color: #6379f4;
-        height: 100%;
-        width: 100vw;
-        font-size: 16px;
-        line-height: 28px;
-        padding: 15px;
-    }
-    .navbar-column-bottom {
         flex: 50%;
-
     }
-    .navbar-column-bottom.right {
+    .graphics {
+        height: 95%;
+        margin-right: 35px;
+    }
+    .money-top {
         display: flex;
-        justify-content: flex-end;
     }
-    .navbar-column-bottom.left {
-        display: flex;
-        justify-content: flex-start;
+    .income {
+        flex: 60%;
+        line-height: 1px;
     }
-
+    .expense {
+        flex: 40%;
+        line-height: 1px;
+    }
+    .charts-bottom {
+        height: 75%;
+    }
+    .transaction-subtitle {
+        position: absolute;
+        right: 200px;
+        top: 310px;
+    }
+    .samuel-icon {
+        width: 40px;
+    }
+    .samuel-history.top {
+        position: absolute;
+        left: 67%;
+        top: 370px;
+    }
+    .samuel-history.bottom {
+        position: absolute;
+        left: 67%;
+        top: 400px;
+    }
+    .samuel-right {
+        position: absolute;
+        right: 200px;
+        top: 375px;
+    }
+    .netflix-icon {
+        position: absolute;
+        width: 40px;
+        top: 430px;
+    }
+    .netflix-history.top {
+        position: absolute;
+        left: 67%;
+        top: 430px;
+    }
+    .netflix-history.bottom {
+        position: absolute;
+        left: 67%;
+        top: 460px;
+    }
+    .netflix-right {
+        position: absolute;
+        right: 200px;
+        top: 435px;
+    }
+    .christine-icon {
+        position: absolute;
+        width: 40px;
+        top: 490px;
+    }
+    .christine-history.top {
+        position: absolute;
+        left: 67%;
+        top: 490px;
+    }
+    .christine-history.bottom{
+        position: absolute;
+        left: 67%;
+        top: 520px;
+    }
+    .christine-right {
+        position: absolute;
+        right: 200px;
+        top: 495px;
+    }
+    .adobe-icon {
+        position: absolute;
+        width: 40px;
+        top: 550px;
+    }
+    .adobe-history.top {
+        position: absolute;
+        left: 67%;
+        top: 550px;
+    }
+    .adobe-history.bottom {
+        position: absolute;
+        left: 67%;
+        top: 580px;
+    }
+    .adobe-right {
+        position: absolute;
+        right: 200px;
+        top: 555px;
+    }
 
 
 </style>
@@ -180,57 +207,124 @@
                 <div class="icon-sidebar align-left">
                     <div class="dashboard">
                         <img src="/img/grid.svg" alt="">
-                        <span class="text-primary">Dashboard</span>
+                        <span class="text-sidebar text-primary">Dashboard</span>
                     </div>
                     <div class="transfer">
                         <img src="/img/arrow-up.svg" alt="">
-                        <span class="text-icon">Transfer</span>
+                        <span class="text-sidebar text-icon">Transfer</span>
                     </div>
                     <div class="top-up">
                         <img src="/img/plus.svg" alt="">
-                        <span class="text-icon">Top up</span>
+                        <span class="text-sidebar text-icon">Top Up</span>
                     </div>
                     <div class="profile">
                         <img src="img/user.svg" alt="">
-                        <span class="text-icon">Profile</span>
+                        <span class="text-sidebar text-icon">Profile</span>
                     </div>
                     <div class="log-out">
                         <img src="/img/log-out.svg" alt="">
-                        <span class="text-icon">Log out</span>
+                        <span class="text-sidebar text-icon">Logout</span>
                     </div>
-                </div>
-                <div class="text-icon">
-    
                 </div>
             </div>
         </aside>
         <div class="main-content">
             <div class="main-balance-wrapper">
                 <div class="box-balance box shadow">
-                    <div class="box-balance left text-white">
-                        <div class="balance-info">
-                            <div class="balance fw-normal">
-                                Balance
-                            </div>
-                            <h1 class="balance-price fw-bold">
-                                Rp120.000
-                            </h1>
-                            <div class="balance-number fw-600">
-                                +62 813-9387-7946
-                            </div>
+                    <div class="balance-info left text-white">
+                        <div class="balance fw-normal">
+                            Balance
+                        </div>
+                        <h1 class="balance-price fw-bold">
+                            Rp120.000
+                        </h1>
+                        <div class="balance-number fw-600">
+                            +62 813-9387-7946
                         </div>
                     </div>
-                    <div class="box-balance right">
-                        
+                    <div class="balance-info right text-white text-center">
+                        <div class="box-transfer">
+                            <img class="icon-balance" src="/img/arrow-up-2.svg" alt="">
+                            <span>Transfer</span>
+                        </div>
+                        <div class="box-topup">
+                            <img class="icon-balance" src="img/plus-2.svg" alt="">
+                            <span>Top up</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="main-transaction">
                 <div class="main-transaction-wrapper charts">
-                    <div class="box-charts box shadow"></div>
+                    <div class="money-top">
+                        <div class="income">
+                            <img src="/img/arrow-down-green.svg" alt="">
+                            <p class="text-charts fw-normal">Income</p>
+                            <h4 class="price-charts fw-bold">Rp2.120.000</h4>
+                        </div>
+                        <div class="expense">
+                            <img src="/img/arrow-up-red.svg" alt="">
+                            <p class="text-charts fw-normal">Expense</p>
+                            <h4 class="price-charts fw-bold">Rp1.560.000</h4>
+                        </div>
+                    </div>
+                    <div class="charts-bottom">
+                        <img class="graphics" src="/img/graphic.svg" alt="">
+                    </div>
                 </div>
                 <div class="main-transaction-wrapper history">
-                    <div class="box-history box shadow"></div>
+                    <h4 class="transaction-title">Transaction History</h4>
+                    <p class="transaction-subtitle text-primary">See all</p>
+                    <div class="transaction-list">
+                        <div class="samuel">
+                            <img class="samuel-icon" src="/img/samuel.svg" alt="">
+                            <div class="samuel-history top top-text">
+                                Samuel Suhi
+                            </div>
+                            <div class="samuel-history bottom bottom-text">
+                                Transfer
+                            </div>
+                            <div class="samuel-right text-green fw-bold">
+                                +Rp50.000
+                            </div>
+                        </div>
+                        <div class="netflix">
+                            <img class="netflix-icon" src="/img/netflix.svg" alt="">
+                            <div class="netflix-history top top-text">
+                                Netflix
+                            </div>
+                            <div class="netflix-history bottom bottom-text">
+                                Subscription
+                            </div>
+                            <div class="netflix-right text-red fw-bold">
+                                -Rp149.000
+                            </div>
+                        </div>
+                        <div class="Christine">
+                            <img class="christine-icon" src="/img/christine.svg" alt="">
+                            <div class="christine-history top top-text">
+                                Christine Mar...
+                            </div>
+                            <div class="christine-history bottom bottom-text">
+                                Transfer
+                            </div>
+                            <div class="christine-right text-green fw-bold">
+                                +150.000
+                            </div>
+                        </div>
+                        <div class="adobe">
+                            <img class="adobe-icon" src="/img/adobe.svg" alt="">
+                            <div class="adobe-history top top-text">
+                                Adobe Inc.
+                            </div>
+                            <div class="adobe-history bottom bottom-text">
+                                Subscription
+                            </div>
+                            <div class="adobe-right text-red fw-bold">
+                                -Rp249.000
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

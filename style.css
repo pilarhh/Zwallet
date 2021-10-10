@@ -5,6 +5,9 @@
 .align-left {
     text-align: left;
 }
+.align-right {
+    text-align: right;
+}
 .text-white {
     color: white!important;
 }
@@ -13,6 +16,12 @@
 }
 .text-icon {
     color: rgba(58, 61, 66, 0.8);;
+}
+.text-green {
+    color: #1EC15F;
+}
+.text-red {
+    color:#FF5B37;
 }
 .fw-bold {
     font-weight: bold;
@@ -31,16 +40,16 @@
 }
 .btn {
     width: 100%;
-    outline: 0;
-    border: 0;
+    outline: none;
+    border: none;
     border-radius: 12px;
     padding: 15px;
     font-weight: bold;
     font-size: 18px;
 }
 .btn-primary {
-    color: #fff;
-    background-color: #6379f4;
+    color: #88888F;
+    background-color: #DADADA;
 }
 .text-primary {
     color: #6379f4;
@@ -48,6 +57,8 @@
 .wrapper {
     width: 75%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 .shadow {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
@@ -60,4 +71,92 @@
 }
 .number-bottom {
     margin-right: 30px;
+}
+.navbar {
+    background-color: #ffffff;
+}
+.navbar-column {
+    flex: 50%;
+}
+.navbar-column.left {
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar-column.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.user-info {
+    margin-left: 20px;
+    line-height: 30px;
+}
+.icon-bell {
+    margin-left: 12.5%;
+}
+.main-wrapper {
+    display: flex;
+    padding: 15px 0;
+    top: 180px;
+}
+.sidebar-menu {
+    flex: 30%;
+    height: 65vh;
+    padding: 15px;
+    background-color: #ffffff;
+}
+.box-sidebar {
+    height: 100%;
+    font-size: 18px;
+    line-height: 31px;
+}
+.icon-sidebar {
+    line-height: 60px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.text-sidebar {
+    position: absolute;
+    margin-left: 20px;
+    float: right;
+}
+.log-out {
+    margin-top: 110px;
+}
+.main-content {
+    flex: 70%;
+    height: 70vh;
+}
+.navbar-bottom {
+    background-color: #6379f4;
+    height: 100%;
+    width: 100vw;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 15px;
+}
+.navbar-column-bottom {
+    flex: 50%;
+}
+.navbar-column-bottom.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-column-bottom.left {
+    display: flex;
+    justify-content: flex-start;
+}
+.transaction-title {
+    color: #3A3D42;
+    font-weight: bold;
+    font-size: 18px;
+}
+.top-text {
+    color: #4D4B57;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bottom-text {
+    color: #7A7886;
+    font-weight: normal;
+    font-size: 14px;
 }
