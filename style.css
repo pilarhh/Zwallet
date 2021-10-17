@@ -38,6 +38,11 @@
 .float-right {
     float: right;
 }
+.box {
+    background: #ffffff;
+    height: 100%;
+    border-radius: 25px;
+}    
 .btn {
     width: 100%;
     outline: none;
