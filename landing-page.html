@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<style>
+    .container {
+        width: 100%;
+        height: 3800px;
+    }
+    .first-page {
+        display: flex;
+        background-color: #FAFCFF;
+    }
+    .first-page.left {
+        flex: 50%;
+    }
+    .first-page.right {
+        flex: 50%;
+    }
+    .first-page-box {
+        width: 100%;
+    }
+    .login-btn {
+        margin-right: 25px;
+        border-color: #6379F4;
+        color: #6379F4;
+        width:25%;
+        outline: none;
+        border-radius: 12px;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .signup-btn {
+        width:25%;
+        outline: none;
+        border: none;
+        border-radius: 12px;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: #6379F4;
+        color: #ffffff;
+    }
+    .signup-btn:hover {
+        box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    }
+    .title {
+        font-size: 60px;
+        font-weight: 800;
+        color: #3A3D42;
+    }
+    .subtitle {
+        font-size: 18px;
+        color: #3A3D42;
+        line-height: 35px;
+    }
+    .try-btn {
+        width:35%;
+        outline: none;
+        border: none;
+        border-radius: 12px;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: #6379F4;
+        color: #ffffff;
+        margin-top: 30px;
+    }
+    .img-list {
+        background: rgba(71, 58, 209, 0.06);
+        margin-top: 40px;
+        text-align: center;
+        padding: 90px;
+    }
+    .second-page-box {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .third-page {
+        margin-top: 90px;
+    }
+    .box-support {
+        padding: 30px;
+    }
+    .subtitle-icon {
+        font-size: 15px;
+        color: rgba(58, 61, 66, 0.9);
+    }
+    .box-small {
+        padding: 10px;
+    }
+    .title-text {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .subtitle-two {
+        font-size: 15px;
+        color: rgba(58, 61, 66, 0.9);
+    }
+    .fifth-page-box {
+        width: 55%;
+        margin-left: 25%;
+        color: #6379F4;
+    }
+    .sixth-page-box {
+        margin-top: 90px;
+        width: 60%;
+        margin-left: 22%;
+    }
+    .arrow-left {
+        position: absolute;
+        left: 6%;
+        top: 450%;
+    }
+    .arrow-right {
+        position: absolute;
+        right: 6%;
+        top: 450%;
+    }
+    .alex-icon {
+        background: url(.png)
+    }
+    .seventh-page {
+        background-color: #6379F4;
+        margin-top: 100px;
+        height: 438px;
+    }
+    .seventh-page-box {
+        padding-top: 40px;
+        height: 100%;
+        width: 75%;
+        margin: auto;
+    }
+    .simplify-text {
+        width: 30%;
+        line-height: 35px;
+    }
+    .number {
+        position: absolute;
+        right: 13%;
+        top: 546%;
+        right: 28%;
+    }
+    .contact {
+        position: absolute;
+        right: 13%;
+        top: 546%;
+    }
+</style>
+<body>
+    <div class="container">
+        <nav class="navbar wrapper">
+            <div class="navbar-column left">
+                <h1 class="brand-name text-primary">Zwallet</h1>
+            </div>
+            <div class="navbar-column right">
+                <button class="login-btn hover">
+                    Login
+                </button>
+                <button class="signup-btn hover">
+                    Sign Up
+                </button>
+            </div>
+        </nav>
+        <div class="first-page wrapper">
+            <div class="first-page left">
+                <img src="./img/Group 49.svg" alt="">
+            </div>
+            <div class="first-page right align-left">
+                <div class="first-page-box">
+                    <h1 class="title">Awesome App
+                        For Saving <span class="text-primary">Time.</span>
+                    </h1>
+                    <p class="subtitle">We bring you a mobile app for banking problems that
+                        oftenly wasting much of your times.</p>
+                    <button class="try-btn hover">
+                        Try It Free
+                    </button>
+                    <p class="subtitle">Available on</p>
+                    <img src="./img/gplay.svg" alt="">
+                    <img src="./img/appstore.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="img-list">
+            <img src="./img/microsoft.svg" alt="">
+            <img src="./img/dropbox.svg" alt="">
+            <img src="./img/h&m.svg" alt="">
+            <img src="./img/airbnb.svg" alt="">
+            <img src="./img/canon.svg" alt="">
+            <img src="./img/dell.svg" alt="">
+        </div>
+        <div class="second-page">
+            <div class="second-page-box text-center">
+                <h1 class="title"><span class="text-primary">About </span>the Application.</h1>
+            <p class="subtitle">We have some great features from the application and it’s totally free to use by all users around the world.</p>
+            </div>
+        </div>
+        <div class="third-page wrapper text-center">
+            <div class="box-support">
+                <img src="./img/support.svg" alt="">
+                <h5 class="title-text">24/7 Support</h5>
+                <p class="subtitle-icon">We have 24/7 contact support so you can contact us whenever you want and we will respond it.</p>
+            </div>
+            <div class="box-support box shadow">
+                <img src="./img/data.svg" alt="">
+                <h5 class="title-text">Data Privacy</h5>
+                <p class="subtitle-icon">We make sure your data is safe in our database and we will encrypt any data you submitted to us.</p>
+            </div>
+            <div class="box-support">
+                <img src="./img/download.svg" alt="">
+                <h5 class="title-text">Easy Download</h5>
+                <p class="subtitle-icon">Zwallet is 100% totally free to use it’s now available on Google Play Store and App Store.</p>
+            </div>
+        </div>
+        <div class="fourth-page wrapper">
+            <div class="first-page fourth left">
+                <img src="./img/Group 54.svg" alt="">
+            </div>
+            <div class="first-page fourth right align-left">
+                <div class="first-page-box">
+                    <h1 class="title">All The <span class="text-primary">Great</span> Zwallet Features.</h1>
+                    <div class="box-small shadow">
+                        <h5 class="title-text"><span class="text-primary">1.</span> Small Fee</h5>
+                        <p class="subtitle-two">We only charge 5% of every success transaction done in Zwallet app.</p>
+                    </div>
+                    <div class="box-small shadow">
+                        <h5 class="title-text"><span class="text-primary">2.</span> Data Secured</h5>
+                        <p class="subtitle-two">All your data is secured properly in our system and it’s encrypted.</p>
+                    </div>
+                    <div class="box-small shadow">
+                        <h5 class="title-text"><span class="text-primary">3.</span> User Friendly</h5>
+                        <p class="subtitle-two">Zwallet come up with modern and sleek design and not complicated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fifth-page">
+            <div class="fifth-page-box text-center">
+                <h1 class="title">What Users Are<span class="text-primary"> Saying.</span></h1>
+            <p class="subtitle">We have some great features from the application and it’s totally free to use by all users around the world.</p>
+            </div>
+        </div>
+        <div class="sixth-page">
+            <div class="sixth-page-box shadow text-center">
+                <img class="alex-img" src="./img/1.png" alt="">
+                <h3>Alex Hansinburg</h3>
+                <span>Designer</span>
+                <p>“This is the most outstanding app that I’ve ever try in my live, this app is such an amazing masterpiece and it’s suitable for you who is bussy with their bussiness and must transfer money to another person aut there. Just try this app and see the power!”</p>
+                <img class="arrow-left" src="./img/arrow-left.svg" alt="">
+                <img class="arrow-right" src="./img/arrow-right.svg" alt="">
+            </div>
+        </div>
+        <footer class="seventh-page">
+            <div class="seventh-page-box">
+                <h1 class="brand-name text-white">
+                    Zwallet
+                </h1>
+                <p class="simplify-text text-white">Simplify financial needs and saving much time in banking needs with one single app.</p>
+                <hr>
+                <p class="align-left text-white">2020 Zwallet. All right reserved.</p>
+                <p class="number text-white">+62 5637 8882 9901</p>
+                <p class="contact text-white">contact@zwallet.com</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
