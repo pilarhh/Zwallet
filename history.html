@@ -12,83 +12,89 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-
 <style>
-    .main-search-history {
+    .main-transaction-history {
         margin-left: 20px;
     }
-    .box-search {
-        box-sizing: border-box;
-        border-radius: 12px;
-        background-color: rgba(58, 61, 66, 0.1);
-        width: 100%;
-        outline: none;
-        border: none;
-        border-radius: 12px;
-        padding: 15px;
+    .transaction-subtitle {
+        color: #7A7886;
         font-weight: normal;
         font-size: 16px;
-        color: rgba(58, 61, 66, 0.4);
     }
-    .samuel-icon {
+    .transaction-subtitle.month {
         position: absolute;
-        width: 55px;
-        top: 37%;
+        top: 55%;
     }
     .samuel-history.top {
         position: absolute;
         left: 44%;
-        top: 37%;
+        top: 32%;
     }
     .samuel-history.bottom {
         position: absolute;
         left: 44%;
-        top: 42%;
+        top: 37%;
     }
-    .momo-icon {
+    .samuel-right {
         position: absolute;
-        width: 55px;
-        top: 50%;
+        right: 13%;
+        top: 34%;
     }
-    .momo-history.top {
+    .netflix-icon {
+        position: absolute;
+        top: 45%;
+    }
+    .netflix-history.top {
+        position: absolute;
+        left: 44%;
+        top: 45%;
+    }.netflix-history.bottom {
         position: absolute;
         left: 44%;
         top: 50%;
     }
-    .momo-history.bottom {
+    .netflix-right {
         position: absolute;
-        left: 44%;
-        top: 55%;
+        right: 13%;
+        top: 46%;
     }
-    .jessica-icon {
+    .christine-icon {
         position: absolute;
-        width: 55px;
         top: 63%;
     }
-    .jessica-history.top {
+    .christine-history.top {
         position: absolute;
         left: 44%;
         top: 63%;
     }
-    .jessica-history.bottom{
+    .christine-history.bottom{
         position: absolute;
         left: 44%;
         top: 68%;
     }
-    .michael-icon {
+    .christine-right {
         position: absolute;
-        width: 55px;
+        right: 13%;
+        top: 64%;
+    }
+    .adobe-icon {
+        position: absolute;
         top: 76%;
     }
-    .michael-history.top {
+    .adobe-history.top {
         position: absolute;
         left: 44%;
         top: 76%;
     }
-    .michael-history.bottom {
+    .adobe-history.bottom {
         position: absolute;
         left: 44%;
         top: 81%;
+    }
+    .adobe-right {
+        position: absolute;
+        right: 13%;
+        top: 77%;
     }
 
 </style>
@@ -117,12 +123,12 @@
             <div class="box-sidebar text-center box shadow">
                 <div class="icon-sidebar align-left">
                     <div class="dashboard">
-                        <img src="/img/grid.svg" alt="">
-                        <span class="text-sidebar text-primary">Dashboard</span>
+                        <img src="/img/grid-blue.svg" alt="">
+                        <span class="text-sidebar">Dashboard</span>
                     </div>
                     <div class="transfer">
                         <img src="/img/arrow-up.svg" alt="">
-                        <span class="text-sidebar text-icon">Transfer</span>
+                        <span class="text-sidebar text-icon text-primary">Transfer</span>
                     </div>
                     <div class="top-up">
                         <img src="/img/plus.svg" alt="">
@@ -139,13 +145,10 @@
                 </div>
             </div>
         </aside>
-        <div class="main-content">
-            <div class="main-search-history">
-                <h4 class="transaction-title">Search Receiver</h4>
-                <div class="box-search">
-                    <img src="/img/search.svg" alt="">
-                    <span>Search receiver here</span>
-                </div>
+        <div class="main-content box shadow">
+            <div class="main-transaction-history">
+                <h4 class="transaction-title">Transaction History</h4>
+                <p class="transaction-subtitle Week">This Week</p>
                 <div class="history-list">
                     <div class="samuel">
                         <img class="samuel-icon" src="/img/samuel.svg" alt="">
@@ -153,34 +156,47 @@
                             Samuel Suhi
                         </div>
                         <div class="samuel-history bottom bottom-text">
-                            +62 813-8492-9994
+                            Transfer
+                        </div>
+                        <div class="samuel-right text-green fw-bold">
+                            +Rp50.000
                         </div>
                     </div>
-                    <div class="momo">
-                        <img class="momo-icon" src="/img/3.svg" alt="">
-                        <div class="momo-history top top-text">
-                            Momo Taro
+                    <div class="netflix">
+                        <img class="netflix-icon" src="/img/netflix.svg" alt="">
+                        <div class="netflix-history top top-text">
+                            Netflix
                         </div>
-                        <div class="momo-history bottom bottom-text">
-                            +62 812-4343-6731
+                        <div class="netflix-history bottom bottom-text">
+                            Subscription
+                        </div>
+                        <div class="netflix-right text-red fw-bold">
+                            -Rp149.000
+                        </div>
+                <p class="transaction-subtitle month">This Month</p>
+                    </div>
+                    <div class="Christine">
+                        <img class="christine-icon" src="/img/christine.svg" alt="">
+                        <div class="christine-history top top-text">
+                            Christine Mar...
+                        </div>
+                        <div class="christine-history bottom bottom-text">
+                            Transfer
+                        </div>
+                        <div class="christine-right text-green fw-bold">
+                            +150.000
                         </div>
                     </div>
-                    <div class="jessica">
-                        <img class="jessica-icon" src="/img/4.svg" alt="">
-                        <div class="jessica-history top top-text">
-                            Jessica Keen
+                    <div class="adobe">
+                        <img class="adobe-icon" src="/img/adobe.svg" alt="">
+                        <div class="adobe-history top top-text">
+                            Adobe Inc.
                         </div>
-                        <div class="jessica-history bottom bottom-text">
-                            +62 811-3452-5252
+                        <div class="adobe-history bottom bottom-text">
+                            Subscription
                         </div>
-                    </div>
-                    <div class="michael">
-                        <img class="michael-icon" src="/img/8.svg" alt="">
-                        <div class="michael-history top top-text">
-                            Michael Le
-                        </div>
-                        <div class="michael-history bottom bottom-text">
-                            +62 810-4224-4613
+                        <div class="adobe-right text-red fw-bold">
+                            -Rp249.000
                         </div>
                     </div>
                 </div>
@@ -204,7 +220,5 @@
             </div>
         </div>
     </nav>
-</body>
-</html>
 </body>
 </html>
