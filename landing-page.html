@@ -20,6 +20,16 @@
     .first-page {
         display: flex;
         background-color: #FAFCFF;
+        animation-name: slidein;
+        animation-duration: 5s;
+    }
+    @keyframes slidein {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
     }
     .first-page.left {
         flex: 50%;
@@ -92,6 +102,11 @@
     }
     .box-support {
         padding: 30px;
+        border-radius: 12px;
+    }
+    .box-support:hover {
+        background-color: #8797f1;
+        transition: 0.5s;
     }
     .subtitle-icon {
         font-size: 15px;
@@ -99,6 +114,11 @@
     }
     .box-small {
         padding: 10px;
+        border-radius: 12px;
+    }
+    .box-small:hover {
+        background-color: #8797f1;
+        transition: 0.5s;
     }
     .title-text {
         font-size: 18px;
@@ -156,6 +176,9 @@
         position: absolute;
         right: 13%;
         top: 546%;
+    }
+    body {
+        margin: 0px;
     }
 </style>
 <body>
