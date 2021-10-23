@@ -1,0 +1,23 @@
+@media screen and (max-width: 480px) {
+    .sidebar-menu, .box-sidebar, .balance-info.left, .navbar-column.left, .main-transaction-wrapper.charts, .navbar-bottom {
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .transaction-list {
+        padding: 12px;
+        width: 100%;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .transfer-user {
+        display: flex;
+        justify-content: space-around;
+    }
+    .balance-info.right {
+        display: flex;
+        flex-direction: column;
+    }
+}
