@@ -1,0 +1,18 @@
+@media screen and (min-width:240px) and (max-width:480px) {
+    .navbar-column.right, .brand-name, .sidebar-menu, .transaction-title, .navbar-bottom {
+        display: none;
+    }
+    .quick-access {
+        display: block;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .arrow-left, .find-receiver {
+        display: block;
+        margin-left: 15px;
+    }
+    .text-mobile {
+        display: block;
+    }
+}
