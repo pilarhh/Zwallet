@@ -22,6 +22,7 @@
     }
     .brand-mobile {
         display: block;
+        padding: 40px;
     }
     .form-box {
         width: 90%;
