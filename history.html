@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./history-mobile.css">
 </head>
 
 <style>
+    body {
+        margin: 0;
+    }
     .main-transaction-history {
         margin-left: 20px;
     }
@@ -25,83 +28,41 @@
         position: absolute;
         top: 55%;
     }
-    .samuel-history.top {
-        position: absolute;
-        left: 44%;
-        top: 32%;
+    .history-list {
+        display: flex;
+        flex-direction: column;
     }
-    .samuel-history.bottom {
-        position: absolute;
-        left: 44%;
-        top: 37%;
+    .transfer-user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 30px 0 30px;
     }
-    .samuel-right {
-        position: absolute;
-        right: 13%;
-        top: 34%;
+    .transfer-caption {
+        font-size: 13px;
+        line-height: 30px;
     }
-    .netflix-icon {
-        position: absolute;
-        top: 45%;
+    .samuel-icon {
+        display: flex;
+        justify-content: flex-start;
     }
-    .netflix-history.top {
-        position: absolute;
-        left: 44%;
-        top: 45%;
-    }.netflix-history.bottom {
-        position: absolute;
-        left: 44%;
-        top: 50%;
+    .amount-transfer {
+        margin-left: 15px;
     }
-    .netflix-right {
-        position: absolute;
-        right: 13%;
-        top: 46%;
+    .text-mobile {
+        display: none;
     }
-    .christine-icon {
-        position: absolute;
-        top: 63%;
-    }
-    .christine-history.top {
-        position: absolute;
-        left: 44%;
-        top: 63%;
-    }
-    .christine-history.bottom{
-        position: absolute;
-        left: 44%;
-        top: 68%;
-    }
-    .christine-right {
-        position: absolute;
-        right: 13%;
-        top: 64%;
-    }
-    .adobe-icon {
-        position: absolute;
-        top: 76%;
-    }
-    .adobe-history.top {
-        position: absolute;
-        left: 44%;
-        top: 76%;
-    }
-    .adobe-history.bottom {
-        position: absolute;
-        left: 44%;
-        top: 81%;
-    }
-    .adobe-right {
-        position: absolute;
-        right: 13%;
-        top: 77%;
+    .navbar-bottom-mobile, .arrow-white {
+        display: none;
     }
 
 </style>
 <body>
-    <nav class="navbar shadow">
+    <header class="navbar shadow">
         <div class="wrapper">
             <div class="navbar-column left">
+                <img class="arrow-white" src="./img/arrow-left-white.svg" alt="">
+                <h3 class="text-mobile text-white">History</h3>
                 <h1 class="brand-name text-primary">Zwallet</h1>
             </div>
             <div class="navbar-column right">
@@ -117,17 +78,17 @@
                 <img class="icon-bell" src="img/bell.svg" alt="">
             </div>
         </div>
-    </nav>
+    </header>
     <section class="wrapper main-wrapper">
         <aside class="sidebar-menu">
             <div class="box-sidebar text-center box shadow">
                 <div class="icon-sidebar align-left">
                     <div class="dashboard">
-                        <img src="/img/grid-blue.svg" alt="">
+                        <img src="/img/grid.svg" alt="">
                         <span class="text-sidebar">Dashboard</span>
                     </div>
                     <div class="transfer">
-                        <img src="/img/arrow-up.svg" alt="">
+                        <img src="/img/arrow-up-blue.svg" alt="">
                         <span class="text-sidebar text-icon text-primary">Transfer</span>
                     </div>
                     <div class="top-up">
@@ -145,65 +106,45 @@
                 </div>
             </div>
         </aside>
-        <div class="main-content box shadow">
-            <div class="main-transaction-history">
-                <h4 class="transaction-title">Transaction History</h4>
-                <p class="transaction-subtitle Week">This Week</p>
+        <main class="main-content box shadow">
+            <section class="main-transaction-history">
+                    <h4 class="transaction-title">Transaction History</h4>
                 <div class="history-list">
-                    <div class="samuel">
+                    <p class="transaction-subtitle Week">This Week</p>
+                    <figure class="transfer-user">
                         <img class="samuel-icon" src="/img/samuel.svg" alt="">
-                        <div class="samuel-history top top-text">
-                            Samuel Suhi
-                        </div>
-                        <div class="samuel-history bottom bottom-text">
-                            Transfer
-                        </div>
-                        <div class="samuel-right text-green fw-bold">
-                            +Rp50.000
-                        </div>
-                    </div>
-                    <div class="netflix">
-                        <img class="netflix-icon" src="/img/netflix.svg" alt="">
-                        <div class="netflix-history top top-text">
-                            Netflix
-                        </div>
-                        <div class="netflix-history bottom bottom-text">
-                            Subscription
-                        </div>
-                        <div class="netflix-right text-red fw-bold">
-                            -Rp149.000
-                        </div>
-                <p class="transaction-subtitle month">This Month</p>
-                    </div>
-                    <div class="Christine">
-                        <img class="christine-icon" src="/img/christine.svg" alt="">
-                        <div class="christine-history top top-text">
-                            Christine Mar...
-                        </div>
-                        <div class="christine-history bottom bottom-text">
-                            Transfer
-                        </div>
-                        <div class="christine-right text-green fw-bold">
-                            +150.000
-                        </div>
-                    </div>
-                    <div class="adobe">
-                        <img class="adobe-icon" src="/img/adobe.svg" alt="">
-                        <div class="adobe-history top top-text">
-                            Adobe Inc.
-                        </div>
-                        <div class="adobe-history bottom bottom-text">
-                            Subscription
-                        </div>
-                        <div class="adobe-right text-red fw-bold">
-                            -Rp249.000
-                        </div>
-                    </div>
+                        <figcaption class="transfer-caption"></figcaption>
+                            Samuel Suhi<br>Transfer
+                        </figcaption>
+                        <figcaption class="amount-transfer text-green fw-bold">+Rp50.000</figcaption>
+                    </figure>
+                    <figure class="transfer-user">
+                        <img class="samuel-icon" src="/img/netflix.svg" alt="">
+                        <figcaption class="transfer-caption">
+                            Netflix<br>Subscription
+                        </figcaption>
+                        <figcaption class="amount-transfer text-red fw-bold">-Rp149.000</figcaption>
+                    </figure>
+                <p class="transaction-subtitle">This Month</p>
+                <figure class="transfer-user">
+                    <img class="samuel-icon" src="/img/christine.svg" alt="">
+                    <figcaption class="transfer-caption">
+                        Christine Mar...<br>Transfer
+                    </figcaption>
+                    <figcaption class="amount-transfer text-green fw-bold">+Rp150.000</figcaption>
+                </figure>
+                <figure class="transfer-user">
+                    <img class="samuel-icon" src="/img/adobe.svg" alt="">
+                    <figcaption class="transfer-caption">
+                        Adobe Inc.<br>Subscription
+                    </figcaption>
+                    <figcaption class="amount-transfer text-red fw-bold">-Rp249.000</figcaption>
+                </figure>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </section>
-    <nav class="navbar-bottom">
+    <footer class="navbar-bottom">
         <div class="wrapper">
             <div class="navbar-column-bottom left">
                 <span class="fw-normal text-white">
@@ -219,6 +160,19 @@
                 </span>
             </div>
         </div>
-    </nav>
+    </footer>
+    <footer>
+        <div class="navbar-bottom-mobile">
+            <button class="button-mobile">
+                <img src="./img/arrow-red.svg" alt="">
+            </button>
+            <button class="button-mobile">
+                <img src="./img/arrow-green.svg" alt="">
+            </button>
+            <button class="button-mobile text-primary">
+                Filter by Date
+            </button>
+        </div>
+    </footer>
 </body>
 </html>
