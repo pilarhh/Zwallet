@@ -49,11 +49,11 @@
     .amount-transfer {
         margin-left: 15px;
     }
-    .text-mobile {
-        display: none;
-    }
-    .navbar-bottom-mobile, .arrow-white {
-        display: none;
+
+    @media screen and (min-width: 481px) {
+        .navbar-bottom-mobile, .arrow-white, .text-mobile {
+            display: none;
+        }
     }
 
 </style>
