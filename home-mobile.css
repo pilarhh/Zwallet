@@ -1,9 +1,27 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 240px) and (max-width: 480px) {
     .sidebar-menu, .box-sidebar, .balance-info.left, .navbar-column.left, .main-transaction-wrapper.charts, .navbar-bottom {
         display: none;
     }
+    .main-balance-wrapper {
+        background-color: #fafcff;
+        height: 10%;
+        width: 100%;
+    }
     .wrapper {
         width: 100%;
+    }
+    .navbar-column.right {
+        background-color: #6379f4;
+        padding: 25px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        width: 50%;
+    }
+    .text-mobile {
+        display: block;
+    }
+    .box-topup, .box-transfer {
+        margin: 1rem 0;
     }
     .transaction-list {
         padding: 12px;
@@ -18,6 +36,14 @@
     }
     .balance-info.right {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+    }
+     .balance-info.right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+     }
+    .text-transfer {
+        color: black;
     }
 }
