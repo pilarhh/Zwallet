@@ -13,26 +13,21 @@
     .row {
         height: 100vh;
     }
-    .brand-name {
-        font-size: 25px;
-    }
     .col.left {
         background: url(img/Mask\ Group.svg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    input {
-        margin-top: 30px;
-        border: 0;
-        border-bottom: 1px solid rgba(169, 169, 169, 0.6);
-        width: 85%;
+    .btn:hover {
+        background-color: #6379f4;
+        color: #ffffff;
     }
 </style>
 <body>
     <main class="container-fluid">
         <div class="row">
-            <div class="col left bg-primary px-5 d-none d-lg-block">
-                <h1 class="text-white mt-4 brand-name">Zwallet</h1>
+            <div class="col left bg-primary px-5 d-none d-md-block">
+                <h3 class="text-white mt-4">Zwallet</h3>
                 <img src="./img/Group 57.svg" alt="">
                 <h2 class="text-white">App that Covering Banking Needs.</h2>
                 <p class="text-white w-75 mt-3 fw-lighter">Zwallet is an application that focussing in banking needs for all users
@@ -42,19 +37,19 @@
                 </p>
             </div>
             <div class="col px-5">
-                <h1 class="text-primary mt-4 d-lg-none text-center p-5">Zwallet</h1>
-                <h2 class="pt-5 w-75 d-none d-lg-block">Did You Forgot Your Password?
+                <h1 class="text-primary mt-4 d-md-none text-center p-5">Zwallet</h1>
+                <h2 class="pt-5 w-75 d-none d-md-block">Did You Forgot Your Password?
                     Don’t Worry, You Can Reset Your
                     Password In a Minutes.</h2>
-                <p class="pt-3 w-75 fw-lighter d-none d-lg-block">To reset your password, you must type your e-mail and we will send a link to your email and you will be directed to the reset password screens.</p>
-                <h2 class="d-lg-none text-center">Reset Password</h2>
-                <p class="d-lg-none text-center fw-lighter">Enter your Zwallet e-mail so we can send you a password reset link.</p>
-                <form class="form-box">
+                <p class="pt-3 w-75 fw-lighter d-none d-md-block">To reset your password, you must type your e-mail and we will send a link to your email and you will be directed to the reset password screens.</p>
+                <h2 class="d-md-none text-center">Reset Password</h2>
+                <p class="d-md-none text-center fw-lighter">Enter your Zwallet e-mail so we can send you a password reset link.</p>
+                <form class="form-box mt-5">
                     <div class="form">
                         <img class="icon" src="./img/mail.svg" alt="">
-                        <input type="text" placeholder="Enter your e-mail">
+                        <input class="border-0 w-75 border-bottom ms-2" type="text" placeholder="Enter your e-mail">
                     </div>
-                    <button class="btn btn-primary w-100 mt-5">
+                    <button class="btn btn-light w-100 mt-5">
                         Confirm
                     </button>
                 </form>
