@@ -1,0 +1,36 @@
+.main-search-history {
+    margin-left: 20px;
+}
+.box-search {
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: rgba(58, 61, 66, 0.1);
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(58, 61, 66, 0.4);
+}
+.history-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.history-user {
+    display: flex;
+    flex-direction: row;
+}
+.history-caption {
+    margin-left: 20px;
+    line-height: 35px;
+}
+
+@media screen and (min-width: 481px) {
+    
+    .quick-access, .arrow-left, .find-receiver, .text-mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,51 @@
+.main-transaction-history {
+    margin-left: 20px;
+}
+.transfer-user {
+    display: flex;
+    flex-direction: row;
+}
+.transfer-text {
+    margin-left: 20px;
+    line-height: 35px;
+}
+.type-text {
+    width: 55%;
+    color: #7A7886;
+    font-size: 16px;
+}
+.form-1 input {
+    width: 50%;
+    font-size: 42px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.form-1 input:focus {
+    color: #6379F4;
+}
+.form-2 input {
+    width: 50%;
+    outline: none;
+    border: 0;
+    border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+    padding: 10px;
+}
+.btn-continue {
+    background-color: #6379F4;
+    float: right;
+    width: 25%;  
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+@media screen and (min-width:481px) {
+    .arrow-left, .find-receiver, .grid-container {
+        display: none;
+    }
+}

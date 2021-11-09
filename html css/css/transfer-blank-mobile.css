@@ -1,0 +1,26 @@
+@media screen and (max-width:480px) {
+    .navbar-column.right, .brand-name, .sidebar-menu, .transfer-title, .type-text, .btn-continue, .navbar-bottom {
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .arrow-left, .find-receiver {
+        display: block;
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    .form {
+        padding: 25px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+      .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+}

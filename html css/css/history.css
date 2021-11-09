@@ -1,0 +1,39 @@
+.main-transaction-history {
+    margin-left: 20px;
+}
+.transaction-subtitle {
+    color: #7A7886;
+    font-weight: normal;
+    font-size: 16px;
+}
+.transaction-subtitle.month {
+    position: absolute;
+    top: 55%;
+}
+.history-list {
+    display: flex;
+    flex-direction: column;
+}
+.transfer-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+}
+.transfer-caption {
+    font-size: 13px;
+    line-height: 30px;
+}
+.samuel-icon {
+    display: flex;
+    justify-content: flex-start;
+}
+.amount-transfer {
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 481px) {
+    .navbar-bottom-mobile, .arrow-white, .text-mobile {
+        display: none;
+    }
+}
