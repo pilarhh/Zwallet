@@ -5,4 +5,4 @@ Zwallet is an online service that allows one party to make electronic transactio
 
 # HTML & CSS
 
-In this repository, I used html & css to make the slicing contents based on figma and made it as similar as possible. For the responsive mobile, I used media queries with min-width: 240px and max-width: 480px.
+In this repository, I used html & css to make the slicing contents based on figma and made it as similar as possible. For the responsive mobile, I used media queries with max-width: 480px.
